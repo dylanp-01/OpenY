@@ -1,0 +1,26 @@
+public abstract interface FloorMenu
+{
+  public void displayFloor()
+  {
+    return NotImplemented;
+    // must implent to display floorlayout with pressable tables
+  }
+
+  public abstract void onTablePress();
+}
+
+public interface WaiterFloorMenu extends FloorMenu
+{
+  public override void onTablePress()
+  {
+    // opens menu for managing orders and table status
+  }
+}
+
+public interface BusboyFloorMenu extends FloorMenu
+{
+  public override void onTablePress()
+  {
+    // opens menu for doing cleaning
+  }
+}
